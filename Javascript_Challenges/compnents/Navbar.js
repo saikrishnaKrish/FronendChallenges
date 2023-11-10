@@ -30,3 +30,8 @@ class Navbar{
     const fetchDataApiLink=new Navbar('fetchData',"./challenges/FetchData/index.html");
     fetchDataApiLink.createElement()
     navbar.appendChild(fetchDataApiLink.element);
+
+
+    const starRatingLink=new Navbar('StarRating',"./challenges/StarRating/index.html");
+    starRatingLink.createElement()
+    navbar.appendChild(starRatingLink.element);
