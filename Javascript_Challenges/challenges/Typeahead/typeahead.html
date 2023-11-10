@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typeahead Challenge</title>
+    <style>
+        #container{
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 20px 5px;
+            
+        }
+        input[type="text"]{
+            border-radius: 5px ;
+            border: 1px dashed rgb(132, 177, 132);
+            box-sizing: border-box;
+            max-width: 300px;
+            padding: 10px 2%;
+        }
+
+        #suggesstionsList{
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            width: 50%;
+            border: 1px solid #ccc;
+            padding: 10px 2%;
+            margin-left: 22%;
+
+        }
+        #suggesstionsList li{
+            border: 1px solid rgb(97, 91, 83);
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+   <div id="container">
+
+    Typeahead challenge!!!
+    <div >
+        <p>Solution for a typeahed</p>
+        <input type="text" placeholder="Search Something...."
+        id="typeahed-input" 
+        class="typeahed-input"/>
+        
+    </div>
+    <ul id="suggesstionsList" class="suggesstions-list">
+    </ul>
+   </div>
+    
+   <script type="module" src="./Typeahead.js"></script>
+</body>
+</html>

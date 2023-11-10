@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Data</title>
+    <style>
+           #data-table{
+               width: 100%;
+               border-collapse: collapse;
+           }
+
+            tr,th,td {
+               border: 5px solid #611919 ;
+           }
+
+           thead > tr{
+               font-size: 20px;
+           }
+
+           tbody > tr:hover{
+               background-color: rgb(63, 58, 53);
+               color: rgb(255, 220, 220);
+               font-size: medium;
+
+           }
+           #heading{
+               background-color: rgb(119, 119, 173); font-size:20px;
+      padding: 50px ; color:wheat"
+           }
+    </style>
+  </head>
+  <body>
+    <p id="heading">
+      The Same Api called by three instances from view wise it wont make any
+      difference the code is being reused by creating a reusable component.
+    </p>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Post</td>
+          <td>Email</td>
+          <td>Comment</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        data
+      </tbody>
+    </table>
+
+    Table Meta
+
+    <table id="meta-table">
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Post</td>
+          <td>Email</td>
+          <td>Comment</td>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+
+    TId
+
+    <table id="TId-table">
+      <thead>
+        <tr>
+          <td>Id</td>
+          <td>Post</td>
+          <td>Email</td>
+          <td>Comment</td>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+    <script type="module" src="./DynamicTable.js"></script>
+  </body>
+</html>
