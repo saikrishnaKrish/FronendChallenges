@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count down timer</title>
+   
+</head>
+<body>
+    <div class="container text-center">
+            <div class="display-wrapper" id="display">
+                    <input type="text" value="0" id="minMSB"/>
+                    <input type="text" value="1" id="minLSB"/>
+                    <span>:</span>
+                    <input type="text" value="0" id="secMSB"/>
+                    <input type="text" value="5" id="secLSB"/>
+            </div>
+            <div class="controls-wrapper" id="controls">
+                <button class="btn btn-primary" id="start">Start</button>
+                <button class="btn btn-primary" id="stop" disabled>Stop</button>
+                <button class="btn btn-primary" id="reset">Reset</button>
+            </div>
+            <p>Please enter a valid time in <strong>MM:SS</strong></p>
+    </div>
+    <link href="./style.css" rel="stylesheet"/>
+    <script src="./timer.js" type="module"></script> 
+</body>
+</html>

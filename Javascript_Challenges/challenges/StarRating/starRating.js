@@ -48,7 +48,7 @@ class starRating {
     const currentElem = event.target.dataset.index;
     this.fillStars(currentElem);
   }
-
+    
   onRestoreRating() {
     this.fillStars(this.filled);
   }
