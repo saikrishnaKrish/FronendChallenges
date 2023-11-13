@@ -42,7 +42,7 @@ function sumofNumbers(cVal){
             className="primary-btn"
                 > Add </button> 
                 <button  className="primary-btn" 
-                onClick={sumofNumbers}>sum of Numbers </button>
+                onClick={handleSum}>sum of Numbers </button>
             <div className="">
             <button className="btn primary-btn" onClick={(e)=>setCount(prevCount=>prevCount+5)} >Increment By 5</button>
             <button className="btn primary-btn" onClick={()=>setCount(prevCount=>prevCount+10)}>Increment By 10</button>
