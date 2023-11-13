@@ -24,6 +24,7 @@ input {
     margin: 0;
     font-size: 4rem;
     border-color: 1px solid grey;
+    /* cursor: not-allowed;; */
 }
 
 button {

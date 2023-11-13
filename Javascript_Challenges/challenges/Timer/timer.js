@@ -28,7 +28,7 @@ class Timer {
 
     this.display = document.getElementById(display);
 
-    console.log("msb", this.minMSB);
+
   }
 
   bindEvents() {
@@ -45,16 +45,28 @@ class Timer {
 
   onStart() {
     this.setControls(true, false);
-    this.display.classList.add("progress");
+    this.diableInputs();
     this.setTime();
     this.startTimer();
+  
+  }
+
+  diableInputs(){
+    let cVal=this.minMSB.style.pointerEvents;
+    (cVal=="none")?cVal="all":cVal="none"
+    this.minMSB.style.pointerEvents=cVal
+    this.minLSB.style.pointerEvents=cVal
+    this.secMSB.style.pointerEvents=cVal
+    this.secLSB.style.pointerEvents=cVal
   }
   onStop() {
     this.setControls(false, true);
+    this.diableInputs();
     this.display.classList.remove("progress");
     clearInterval(this.IntervalId);
   }
   onReset() {
+    this.diableInputs();
     this.onStop();
     this.resetTimer();
   }
@@ -87,14 +99,14 @@ class Timer {
     }
   }
   setTime() {
-    console.log("timer startred", this.minMSB);
     this.minutes =
       parseInt(this.minMSB.value) * 10 + parseInt(this.minLSB.value);
     this.seconds =
       parseInt(this.secMSB.value) * 10 + parseInt(this.secLSB.value);
   }
+
+
   startTimer() {
-    console.log("timer check");
     if (this.minutes === 0 && this.seconds == 0) {
       this.onReset();
       return;
