@@ -1,0 +1,38 @@
+.container{
+    box-sizing: border-box;
+  
+    padding: 20px;
+    text-align: center;
+}
+
+.languagesList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.langCard{
+    max-width: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+.langName{
+margin-top:0;
+font-size: 20px;
+color: #007bff;
+}
+
+.info{
+    margin: 5px 0;
+    font-size: 16px;
+    color: #76808a;
+}
+
+.heading{
+    font-size: 24px;
+    color: aliceblue;
+}
