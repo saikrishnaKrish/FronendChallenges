@@ -1,0 +1,15 @@
+.productCard{
+    background: aliceblue;
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid orange;
+    border-radius: 14px;
+}
+button{
+    padding: 11px;
+    font-weight: bold;
+    font-family: emoji;
+    border-radius: 1pc;
+    background: yellowgreen;
+    color: rebeccapurple;
+}

@@ -5,10 +5,6 @@ const Counter=()=>{
     
     const [count,setCount] =useState(0);
     const inputRef=useRef();
-
-
-    
-
 function sumofNumbers(cVal){
     let sum=0
     if(cVal==0)
@@ -52,3 +48,4 @@ function sumofNumbers(cVal){
 }
 
 export default Counter;
+
